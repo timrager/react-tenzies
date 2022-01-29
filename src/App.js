@@ -22,6 +22,7 @@ const App = () => {
         <div className="dice-container">
           {diceElements}
         </div>
+        <div className="roll-btn" onClick={() => setDice(allNewDice)}> Roll </div>
       </main>
   );
 };
