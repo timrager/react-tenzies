@@ -5,7 +5,14 @@ const Dice = (props) => {
 
     return (
         <div className="die-face">
-            <h2 className="dice">{props.value}</h2>
+            {
+                props.isHeld
+                ?
+                    <h2 className="dice dice-hold" >{props.value}</h2>
+                :
+                    <h2 className="dice">{props.value}</h2>
+            }
+            
         </div>
     )
 }
